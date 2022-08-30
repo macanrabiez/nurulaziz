@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+
+html, body{
+	margin: 0;
+	padding: 0;
+}
+
+h1{
+	font-family: 'Fredericka the Great', cursive;
+	font-size: 40px;
+}
+
+a{
+	color: DimGray;
+	text-decoration: none;
+	transition: 0.6s;
+}
+
+a:hover {
+	color: #eee;
+}
+
+h2{
+	font-size: 18px;
+	text-align: center;
+}
+
+li{
+	list-style-type:none;
+}
+
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #eee;
+	background-image: url(kertas.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	line-height: 1.65;
+	padding-bottom: 20px;
+}
+
+/* Kepala */
+
+.kepala{
+	text-align: center;
+}
+
+/* Pemutar Musik */
+
+.pemutar-musik{
+	max-width: 800px;
+	margin: 10px auto;
+}
+
+.music{
+	width: 100%;
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+.music.player {
+	text-align: center;
+	background-color: #eee;
+	background-image: url(kertas.jpg);
+	background-size: cover;
+	border-radius: 20px;
+}
+
+.music.putar {
+	background-color: #eee;
+	background-image: url(kertas.jpg);
+	background-size: cover;
+	border-radius: 20px;
+}
+
+/* Kaki */
+
+.kaki{
+	text-align: center;
+	font-size: 14px;
+}
+
+/* Responsive */
+@media( min-width: 600px) {
+	.pemutar-musik{
+		display: flex;
+		justify-content: space-between;
+	}
+}

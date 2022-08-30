@@ -1,0 +1,95 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+
+html, body{
+	margin: 0;
+	padding: 0;
+}
+
+h1{
+	font-family: 'Fredericka the Great', cursive;
+	font-size: 40px;
+}
+
+a{
+	color: DimGray;
+	text-decoration: none;
+	transition: 0.6s;
+}
+
+a:hover {
+	color: #eee;
+}
+
+h3{
+	font-size: 18px;
+	text-align: center;
+}
+
+li{
+	list-style-type:none;
+}
+
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #eee;
+	background-image: url(gambar/kertas.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	line-height: 1.65;
+	padding-bottom: 20px;
+}
+
+/* Kepala */
+
+.kepala{
+	text-align: center;
+}
+
+/* Badan Utama */
+
+.container{
+	max-width: 800px;
+	margin: 50px auto;
+	background-color: #fff;
+	background-image: url(gambar/kertas.jpg);
+	background-size: cover;
+	padding: 20px;
+}
+
+.artikel{
+	text-align: justify;
+	flex: 3;
+}
+
+.kaki-artikel{
+	text-align: right;
+}
+
+.jembatan-roti{
+	text-align: center;
+	padding: 20px;
+}
+
+.kategori{
+	flex: 1;
+}
+
+.bilah-sisi{
+	font-size: 14px;
+	flex: 1;
+}
+
+/* Kaki */
+
+.kaki{
+	text-align: center;
+	font-size: 14px;
+}
+
+/* Responsive */
+@media( min-width: 600px ) {
+	.container{
+		box-sizing: border-box;
+		display: flex;
+	}
+}
