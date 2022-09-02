@@ -1,4 +1,6 @@
-﻿@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
 
 html, body{
 	margin: 0;
@@ -6,8 +8,9 @@ html, body{
 }
 
 h1{
-	font-family: 'Fredericka the Great', cursive;
-	font-size: 40px;
+	font-family: 'Cabin Sketch', cursive;
+	font-size:50px;
+	margin-bottom: -20px;
 }
 
 a{
@@ -30,7 +33,7 @@ li{
 }
 
 body{
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: 'Special Elite', cursive;
 	background-color: #eee;
 	background-image: url(gambar/kertas.jpg);
 	background-size: cover;
