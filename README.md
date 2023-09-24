@@ -1,2 +1,3 @@
 # nurulaziz
-personal website
+Ini hanyalah sebuah personal website yang tidak penting
+TERIMAKASIH
