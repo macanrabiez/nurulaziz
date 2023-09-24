@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+*
+{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 18px;
+	background-color: #dedede;
+}
+
+.kepala{
+	text-align: center;
+	max-width: 260px;
+	margin: 0 auto;
+}
+
+.kepala h1{
+	font-size: 2.5em;
+	font-family: 'Bangers', cursive;
+	font-weight: 400;
+	margin-top: 10px;
+}
+
+.kepala a{
+	color: #333;
+	text-decoration: none;
+}
+
+.kepala a:hover{
+	color: #b6a19c;
+}
+
+.container
+{
+  width: 1400px;
+  margin: 20px auto;
+  columns: 4;
+  column-gap: 20px;
+}
+.container .box
+{
+  width: 100%;
+  margin-bottom: 10px;
+  break-inside: avoid;
+  border-radius: 15px;
+}
+.container .box img
+{
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.kaki{
+	color: #333;
+	text-align: center;
+	padding: 20px;
+	margin-top: 15px;
+}
+
+.namablog{
+	font-family: 'Bangers', cursive;
+	font-weight: 400;
+	color: #333;
+	text-decoration: none;
+}
+
+.namablog:hover{
+	color: #b6a19c;
+}
+
+@media (max-width: 1200px)
+{
+  .container
+  {
+    columns: 3;
+    width: calc(100% - 40px);
+  }
+}
+@media (max-width: 768px)
+{
+  .container
+  {
+    columns: 2;
+  }
+}
+@media (max-width: 480px)
+{
+  .container
+  {
+    columns: 1;
+  }
+}

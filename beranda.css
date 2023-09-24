@@ -1,0 +1,359 @@
+/* CSS dibuat oleh Macan Rabiez */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	color: #333;
+	background-color: #dedede;
+	min-height: 100vh;
+}
+
+.navigasi{
+	top: 0;
+	position: fixed;
+	width: 60px;
+	height: 100%;
+	background: #b6a19c;
+	transition: 0.5s;
+	overflow: hidden;
+	z-index: 10;
+}
+
+.navigasi:hover, .navigasi.active{
+	width: 240px;
+}
+
+.navigasi ul{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+.navigasi ul li{
+	position: relative;
+	width: 100%;
+	list-style: none;
+}
+
+.navigasi ul li:hover{
+	background: #374955;
+}
+
+.navigasi ul li a{
+	position: relative;
+	display: block;
+	width: 100%;
+	display: flex;
+	text-decoration: none;
+	color: #333;
+}
+
+.navigasi ul li a:hover{
+	color: #dedede;
+}
+
+.navigasi ul li a .lambang{
+	position: relative;
+	display: block;
+	min-width: 60px;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+}
+
+.navigasi ul li a .lambang .fa{
+	font-size: 24px;
+}
+
+.navigasi ul li a .judul{
+	position: relative;
+	display: block;
+	padding: 0 10px;
+	height: 60px;
+	line-height: 60px;
+	text-align: start;
+	white-space: nowrap;
+}
+
+.toggle{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 60px;
+	height: 60px;
+	cursor: pointer;
+	z-index: 10;
+}
+
+.toggle:active{
+	background: #b6a19c;
+}
+
+.toggle:before{
+	content: '\f0c9';
+	font-family: FontAwesome;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	line-height: 60px;	
+	text-align: center;
+	font-size: 24px;
+	color: #374955;
+}
+
+.toggle.active:before{
+	content: '\f00d';
+	color: #f03;
+}
+	
+.kepala{
+	max-width: 700px;
+	text-align: justify;
+	margin: 8px auto;
+	padding: 5px;
+	max-height: 300px;
+}
+
+.kepala h1{
+	font-size: 4vmax;
+	font-family: 'Bangers', cursive;
+	font-weight: 400;
+	margin-left: 40px;
+	float: left;
+}
+
+.kepala p{
+	font-size: 16px;
+	margin-left: 40px;
+}
+
+.kepala a{
+	text-decoration: none;
+	color: #333;
+}
+
+.kepala a:hover{
+	color: #b6a19c;
+}
+
+.kepala img{
+	width: 35%;
+	margin-right: 80px;
+	float: right;
+}
+
+.beresin:before,
+.beresin:after{
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.beresin:after{
+    clear: both;
+}
+
+/**
+ * Untuk IE 6/7
+ * Sertakan aturan ini untuk memicu hasLayout dan berisi float.
+ */
+.beresin{
+    *zoom: 1;
+}
+	
+/* Linimasa yang sebenarnya (garis vertikal) */
+.linimasa{
+	position: relative;
+	max-width: 850px;
+	margin: 0 auto;
+}
+
+/* Linimasa yang sebenarnya (garis vertikal) */
+.linimasa::after{
+	content: '';
+	position: absolute;
+	width: 6px;
+	background-color: #333;
+	top: 0;
+	bottom: 0;
+	left: 50%;
+	margin-left: -3px;
+}
+
+/* Area di sekitar muatan */
+.area{
+	padding: 10px 40px;
+	position: relative;
+	background-color: inherit;
+	width: 50%;
+}
+
+/* Bintik pada garis linimasa */
+.area::after{
+	content: '';
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	right: -17px;
+	background-color: #eaeaea;
+	border: 4px solid #b6a19c;
+	top: 15px;
+	border-radius: 50%;
+	z-index: 1;
+}
+
+/* Posisi area ke sebelah kiri */
+.kiri{
+	left: 0;
+}
+
+/* Posisi area ke sebelah kanan */
+.kanan{
+	left: 50%;
+}
+
+/* Tambahkan panah ke area kiri (menunjuk ke kanan) */
+.kiri::before{
+	content: " ";
+	height: 0;
+	position: absolute;
+	top: 22px;
+	width: 0;
+	z-index: 1;
+	right: 30px;
+	border: medium solid white;
+	border-width: 10px 0 10px 10px;
+	border-color: transparent transparent transparent white;
+}
+
+/* Tambahkan panah ke area kanan (menunjuk ke kiri) */
+.kanan::before{
+	content: " ";
+	height: 0;
+	position: absolute;
+	top: 22px;
+	width: 0;
+	z-index: 1;
+	left: 30px;
+	border: medium solid white;
+	border-width: 10px 10px 10px 0;
+	border-color: transparent white transparent transparent;
+}
+
+/* Perbaiki bintik untuk area di sisi kanan */
+.kanan::after{
+	left: -16px;
+}
+
+/* Muatan sebenarnya */
+.muatan{
+	padding: 20px 30px;
+	background-color: white;
+	position: relative;
+	border-radius: 6px;
+}
+
+.muatan h2{
+	font-family: 'Bangers', cursive;
+	font-weight: 400;
+	color: #b6a19c;
+	margin-bottom: 10px;
+}
+
+.muatan h2:hover{
+	color: #333;
+}
+
+.muatan a{
+	color: #f03;
+	text-decoration: none;
+}
+
+.muatan a:hover{
+	color: #b6a19c;
+}
+
+.kanan h2{
+	text-align: right;
+}
+
+.muatan p{
+	text-align: justify;
+}
+
+.kaki{
+	color: #333;
+	text-align: center;
+	padding: 20px;
+	margin-top: 30px;
+}
+
+.namablog{
+	font-family: 'Bangers', cursive;
+	font-weight: 400;
+	color: #333;
+	text-decoration: none;
+}
+
+.namablog:hover{
+	color: #b6a19c;
+}
+
+@media (max-width: 800px){
+	.navigasi{
+		left: -60px;
+	}
+	
+	.navigasi.active{
+		left: 0px;
+		width: 100%;
+	}
+}
+
+/* Kueri media - Linimasa responsif pada layar dengan lebar kurang dari 600 piksel */
+@media screen and (max-width: 600px){
+	/* Tempatkan linimasa di sebelah kiri */
+	.linimasa::after{
+		left: 31px;
+	}
+  
+	/* Lebar area penuh */
+	.area{
+		width: 100%;
+		padding-left: 70px;
+		padding-right: 25px;
+	}
+  
+	/* Pastikan semua panah mengarah ke kiri */
+	.area::before {
+		left: 60px;
+		border: medium solid white;
+		border-width: 10px 10px 10px 0;
+		border-color: transparent white transparent transparent;
+	}
+
+	/* Pastikan semua bintik berada di tempat yang sama */
+	.kiri::after, .kanan::after {
+		left: 15px;
+	}
+  
+	/* Jadikan semua area kanan berperilaku seperti yang kiri */
+	.kanan {
+		left: 0%;
+	}
+  
+	.kanan h2 {
+		text-align: left;
+	}
+}
